@@ -30,13 +30,13 @@ const Header = () => {
 					<NavLink href="/kids">Kids</NavLink>
 					<NavLink href="/collections">Collections</NavLink>
 					<NavButton>
-						<Icon id="shopping-bag" />
+						<Icon id="shopping-bag" color={COLORS.gray[900]} />
 					</NavButton>
 					<NavButton>
-						<Icon id="search" />
+						<Icon id="search" color={COLORS.gray[900]} />
 					</NavButton>
 					<NavButton onClick={() => setShowMobileMenu(true)}>
-						<Icon id="menu" />
+						<Icon id="menu" color={COLORS.gray[900]} />
 					</NavButton>
 				</Nav>
 				<Side />
