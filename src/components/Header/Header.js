@@ -57,7 +57,7 @@ const MainHeader = styled.div`
 	height: 72px;
 	border-bottom: 1px solid ${COLORS.gray[300]};
 
-	@media ${QUERIES.phoneAndDown} {
+	@media ${QUERIES.tabletAndDown} {
 		padding: 18px 16px;
 	}
 `;
@@ -67,7 +67,7 @@ const Nav = styled.nav`
 	gap: 48px;
 	margin: 0px 48px;
 
-	@media ${QUERIES.phoneAndDown} {
+	@media ${QUERIES.tabletAndDown} {
 		gap: 20px;
 		margin: unset;
 		flex: 1 1 100%;
@@ -90,7 +90,7 @@ const NavLink = styled.a`
 		color: ${COLORS.secondary};
 	}
 
-	@media ${QUERIES.phoneAndDown} {
+	@media ${QUERIES.tabletAndDown} {
 		display: none;
 	}
 `;
@@ -101,7 +101,7 @@ const NavButton = styled.button`
 	background-color: transparent;
 	padding: 0;
 
-	@media ${QUERIES.phoneAndDown} {
+	@media ${QUERIES.tabletAndDown} {
 		display: block;
 	}
 `;

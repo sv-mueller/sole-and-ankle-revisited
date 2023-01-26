@@ -25,7 +25,7 @@ const SuperHeader = () => {
 };
 
 const Wrapper = styled.div`
-	@media ${QUERIES.phoneAndDown} {
+	@media ${QUERIES.tabletAndDown} {
 		border-bottom: 4px solid ${COLORS.gray[900]};
 	}
 `;
@@ -41,7 +41,7 @@ const ContentWrapper = styled.div`
 	padding-left: 32px;
 	padding-right: 32px;
 
-	@media ${QUERIES.phoneAndDown} {
+	@media ${QUERIES.tabletAndDown} {
 		display: none;
 	}
 `;
