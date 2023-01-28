@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { COLORS, QUERIES, WEIGHTS } from "../../constants";
+import { QUERIES, WEIGHTS } from "../../constants";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import MobileMenu from "../MobileMenu";
@@ -30,13 +30,13 @@ const Header = () => {
 					<NavLink href="/kids">Kids</NavLink>
 					<NavLink href="/collections">Collections Just A Bit Longer</NavLink>
 					<NavButton>
-						<Icon id="shopping-bag" color={COLORS.gray[900]} />
+						<Icon id="shopping-bag" color="var(--color-gray-900)" />
 					</NavButton>
 					<NavButton>
-						<Icon id="search" color={COLORS.gray[900]} />
+						<Icon id="search" color="var(--color-gray-900)" />
 					</NavButton>
 					<NavButton onClick={() => setShowMobileMenu(true)}>
-						<Icon id="menu" color={COLORS.gray[900]} />
+						<Icon id="menu" color="var(--color-gray-900)" />
 					</NavButton>
 				</Nav>
 				<Side />
@@ -56,7 +56,7 @@ const MainHeader = styled.div`
 	padding: 18px 32px;
 	padding-right: 0;
 	height: 72px;
-	border-bottom: 1px solid ${COLORS.gray[300]};
+	border-bottom: 1px solid var(--color-gray-300);
 	overflow: auto hidden;
 
 	@media ${QUERIES.tabletAndDown} {
@@ -88,12 +88,12 @@ const NavLink = styled.a`
 	font-size: 1.125rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: ${COLORS.gray[900]};
+	color: var(--color-gray-900);
 	font-weight: ${WEIGHTS.medium};
 	white-space: nowrap;
 
 	&:first-of-type {
-		color: ${COLORS.secondary};
+		color: var(--color-secondary);
 	}
 
 	@media ${QUERIES.tabletAndDown} {
