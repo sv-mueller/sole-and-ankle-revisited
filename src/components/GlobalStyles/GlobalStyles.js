@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components/macro";
-import { COLORS } from "../../constants";
+import { COLORS, WEIGHTS } from "../../constants";
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -76,6 +76,10 @@ table {
   --color-gray-900: ${COLORS.gray[900]};
   --color-primary: ${COLORS.primary};
   --color-secondary: ${COLORS.secondary};
+
+  --weight-normal: ${WEIGHTS.normal};
+  --weight-medium: ${WEIGHTS.medium};
+  --weight-bold: ${WEIGHTS.bold};
 }
 
 html {

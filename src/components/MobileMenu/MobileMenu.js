@@ -3,9 +3,6 @@ import React from "react";
 import styled from "styled-components/macro";
 import { DialogOverlay, DialogContent, Dialog } from "@reach/dialog";
 
-import { QUERIES, WEIGHTS } from "../../constants";
-
-import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
 
@@ -80,7 +77,7 @@ const NavLink = styled.a`
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--color-gray-900);
-	font-weight: ${WEIGHTS.medium};
+	font-weight: var(--weight-medium);
 
 	&:first-of-type {
 		color: var(--color-secondary);
@@ -97,7 +94,7 @@ const FooterLink = styled.a`
 	font-size: calc(14 / 16 * 1rem);
 	text-decoration: none;
 	color: var(--color-gray-700);
-	font-weight: ${WEIGHTS.normal};
+	font-weight: var(--weight-normal);
 `;
 
 export default MobileMenu;
