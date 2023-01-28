@@ -28,7 +28,7 @@ const Header = () => {
 					<NavLink href="/men">Men</NavLink>
 					<NavLink href="/women">Women</NavLink>
 					<NavLink href="/kids">Kids</NavLink>
-					<NavLink href="/collections">Collections</NavLink>
+					<NavLink href="/collections">Collections Just A Bit Longer</NavLink>
 					<NavButton>
 						<Icon id="shopping-bag" color={COLORS.gray[900]} />
 					</NavButton>
@@ -54,8 +54,10 @@ const MainHeader = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 18px 32px;
+	padding-right: 0;
 	height: 72px;
 	border-bottom: 1px solid ${COLORS.gray[300]};
+	overflow: auto hidden;
 
 	@media ${QUERIES.tabletAndDown} {
 		padding: 18px 16px;
@@ -65,7 +67,9 @@ const MainHeader = styled.div`
 const Nav = styled.nav`
 	display: flex;
 	gap: 48px;
-	margin: 0px 48px;
+	gap: 5rem;
+	gap: clamp(1rem, 14vw - 7.25rem, 5rem);
+	margin-left: 48px;
 
 	@media ${QUERIES.tabletAndDown} {
 		gap: 20px;
@@ -77,6 +81,7 @@ const Nav = styled.nav`
 
 const Side = styled.div`
 	flex: 1;
+	flex-shrink: 999;
 `;
 
 const NavLink = styled.a`
@@ -85,6 +90,7 @@ const NavLink = styled.a`
 	text-decoration: none;
 	color: ${COLORS.gray[900]};
 	font-weight: ${WEIGHTS.medium};
+	white-space: nowrap;
 
 	&:first-of-type {
 		color: ${COLORS.secondary};
